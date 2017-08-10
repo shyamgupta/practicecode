@@ -8,9 +8,9 @@ def print_scores():
 
 
 @app.route('/add/<int:num1>/<int:num2>')
-def add_integers():
+def add_integers(num1,num2):
     number1=request.args.get('num1')
     number2=request.args.get('num2')
-    return render_template('add.html',number1,number2)
+    return render_template('add.html',number1=num1,number2=num2)
 
 app.run(port=5000,debug=True)
