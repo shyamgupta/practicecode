@@ -45,9 +45,12 @@
             </form>
         
         </div>
-        {% for i in session['activity'] %}
-        <p>{{session['activity'][i]}}</p>
-        {% endfor %}
+        <p>Activities</p>
+        <div id="activities">
+            {% for i in session['activity'] %}
+            <p>{{i}}</p>
+            {% endfor %}
+        </div>
     </body>
 
 </html>
